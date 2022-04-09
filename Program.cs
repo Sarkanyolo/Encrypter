@@ -39,9 +39,9 @@
                     File.WriteAllBytes($"{path}.nc", Encrypt(content, pass));
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                Console.WriteLine(ex);
+                Console.WriteLine("Wrong password!");
             }
         }
 
